@@ -6,15 +6,6 @@ import { trackWaitlistSignup } from '@/lib/analytics'
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error'
 
-const industries = [
-  'Property investor',
-  'Developer',
-  'Deal sourcer',
-  'Portfolio manager',
-  'Estate agent',
-  'Other',
-]
-
 interface WaitlistFormProps {
   source?: string
   buttonText?: string
@@ -125,18 +116,15 @@ export function WaitlistForm({
           disabled={state === 'submitting'}
           required
         />
-        <select
+        <input
+          type="text"
           value={industry}
           onChange={(e) => setIndustry(e.target.value)}
-          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base text-gray-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+          placeholder="Your industry"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
           disabled={state === 'submitting'}
           required
-        >
-          <option value="" disabled>Select your industry</option>
-          {industries.map((ind) => (
-            <option key={ind} value={ind}>{ind}</option>
-          ))}
-        </select>
+        />
         <button
           type="submit"
           disabled={state === 'submitting'}
