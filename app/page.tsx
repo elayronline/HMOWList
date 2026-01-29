@@ -96,12 +96,12 @@ const faqs = [
   {
     question: 'When will HMO Hunter launch?',
     answer:
-      'We\'re currently in private development. Join the waitlist to be notified when we open early access. Waitlist members will get priority access and the opportunity to shape the product.',
+      'We\'re currently in private development. Join the waiting list to be notified when we open early access. Waiting list members will get priority access and the opportunity to shape the product.',
   },
   {
     question: 'How much will it cost?',
     answer:
-      'Pricing hasn\'t been finalised yet. We\'re focused on building something genuinely useful first. Waitlist members will receive early-bird pricing when we launch.',
+      'Pricing hasn\'t been finalised yet. We\'re focused on building something genuinely useful first. Waiting list members will receive early-bird pricing when we launch.',
   },
   {
     question: 'What data sources do you use?',
@@ -140,7 +140,7 @@ export default function Home() {
           </p>
 
           <div className="mx-auto mt-10 max-w-md">
-            <WaitlistForm source="hero" buttonText="Join the Waitlist" />
+            <WaitlistForm source="hero" buttonText="Join the Waiting List" />
           </div>
 
           <button
@@ -275,7 +275,7 @@ export default function Home() {
             Be first in line
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-brand-100">
-            Join the waitlist for early access to HMO Hunter. No spam, just updates on our progress.
+            Join the waiting list for early access to HMO Hunter. No spam, just updates on our progress.
           </p>
           <div className="mx-auto mt-8 max-w-md">
             <WaitlistForm source="footer_cta" buttonText="Get Early Access" />

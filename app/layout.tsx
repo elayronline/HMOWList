@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'HMO Hunter | Find & Analyse UK HMO Deals Faster',
   description:
-    'HMO Hunter helps serious UK property investors find, model, and de-risk HMO deals. Analyse yields, licensing, Article 4, and compliance—all in one place. Join the waitlist.',
+    'HMO Hunter helps serious UK property investors find, model, and de-risk HMO deals. Analyse yields, licensing, Article 4, and compliance—all in one place. Join the waiting list.',
   keywords: [
     'HMO',
     'HMO investment',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'HMO Hunter',
     title: 'HMO Hunter | Find & Analyse UK HMO Deals Faster',
     description:
-      'Find, model, and de-risk UK HMO deals faster. Join the waitlist for early access.',
+      'Find, model, and de-risk UK HMO deals faster. Join the waiting list for early access.',
     images: [
       {
         url: '/og-image.png',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'HMO Hunter | Find & Analyse UK HMO Deals Faster',
     description:
-      'Find, model, and de-risk UK HMO deals faster. Join the waitlist for early access.',
+      'Find, model, and de-risk UK HMO deals faster. Join the waiting list for early access.',
     images: ['/og-image.png'],
   },
   robots: {

@@ -131,7 +131,7 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json(
-      { message: 'Successfully joined the waitlist!', success: true },
+      { message: 'Successfully joined the waiting list!', success: true },
       { status: 201 }
     )
   } catch (error) {

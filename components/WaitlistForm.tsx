@@ -14,7 +14,7 @@ interface WaitlistFormProps {
 
 export function WaitlistForm({
   source = 'hero',
-  buttonText = 'Join the Waitlist',
+  buttonText = 'Join the Waiting List',
   className = '',
 }: WaitlistFormProps) {
   const [email, setEmail] = useState('')
