@@ -124,7 +124,7 @@ export function WaitlistForm({
       {errorMessage && (
         <p className="mt-2 text-sm text-red-600">{errorMessage}</p>
       )}
-      <p className="mt-2 text-xs text-gray-500">
+      <p className="mt-2 text-xs text-gray-900">
         No spam. Unsubscribe anytime.
       </p>
     </form>
