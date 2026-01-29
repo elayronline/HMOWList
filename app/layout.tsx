@@ -5,9 +5,9 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hmohunter.vercel.ap
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'HMO Hunter | Find & Analyse UK HMO Deals Faster',
+  title: 'HMO Hunter | Find High-Yield HMO Opportunities',
   description:
-    'HMO Hunter helps serious UK property investors find, model, and de-risk HMO deals. Analyse yields, licensing, Article 4, and compliance—all in one place. Join the waiting list.',
+    'HMO Hunter helps property investors and developers uncover existing and potential high-yield HMO opportunities. Built-in compliance checks against UK regulations. Join the waiting list.',
   keywords: [
     'HMO',
     'HMO investment',
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: siteUrl,
     siteName: 'HMO Hunter',
-    title: 'HMO Hunter | Find & Analyse UK HMO Deals Faster',
+    title: 'HMO Hunter | Find High-Yield HMO Opportunities',
     description:
-      'Find, model, and de-risk UK HMO deals faster. Join the waiting list for early access.',
+      'Find high-yield HMO opportunities before you commit. Join the waiting list for early access.',
     images: [
       {
         url: '/og-image.png',
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HMO Hunter | Find & Analyse UK HMO Deals Faster',
+    title: 'HMO Hunter | Find High-Yield HMO Opportunities',
     description:
-      'Find, model, and de-risk UK HMO deals faster. Join the waiting list for early access.',
+      'Find high-yield HMO opportunities before you commit. Join the waiting list for early access.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -74,7 +74,7 @@ export default function RootLayout({
     applicationCategory: 'BusinessApplication',
     operatingSystem: 'Web',
     description:
-      'HMO Hunter helps UK property investors find, model, and de-risk HMO deals faster with comprehensive deal analysis tools.',
+      'HMO Hunter helps property investors and developers uncover existing and potential high-yield HMO opportunities with built-in compliance checks against UK regulations.',
     offers: {
       '@type': 'Offer',
       availability: 'https://schema.org/PreOrder',
