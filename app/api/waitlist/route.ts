@@ -3,7 +3,9 @@ import { promises as fs } from 'fs'
 import path from 'path'
 
 interface WaitlistEntry {
+  name: string
   email: string
+  industry: string
   source: string
   timestamp: string
   utm_source?: string
@@ -47,7 +49,9 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const {
+      name,
       email,
+      industry,
       source = 'unknown',
       utm_source,
       utm_medium,
@@ -56,10 +60,26 @@ export async function POST(request: NextRequest) {
       utm_content,
     } = body
 
+    // Validate name
+    if (!name || typeof name !== 'string' || !name.trim()) {
+      return NextResponse.json(
+        { error: 'Name is required' },
+        { status: 400 }
+      )
+    }
+
     // Validate email
     if (!email || typeof email !== 'string') {
       return NextResponse.json(
         { error: 'Email is required' },
+        { status: 400 }
+      )
+    }
+
+    // Validate industry
+    if (!industry || typeof industry !== 'string') {
+      return NextResponse.json(
+        { error: 'Industry is required' },
         { status: 400 }
       )
     }
@@ -74,7 +94,9 @@ export async function POST(request: NextRequest) {
     }
 
     const entry: WaitlistEntry = {
+      name: name.trim(),
       email: normalizedEmail,
+      industry,
       source,
       timestamp: new Date().toISOString(),
       ...(utm_source && { utm_source }),

@@ -1,10 +1,19 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { getStoredUTMParams } from '@/lib/utm'
 import { trackWaitlistSignup } from '@/lib/analytics'
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error'
+
+const industries = [
+  'Property investor',
+  'Developer',
+  'Deal sourcer',
+  'Portfolio manager',
+  'Estate agent',
+  'Other',
+]
 
 interface WaitlistFormProps {
   source?: string
@@ -17,7 +26,9 @@ export function WaitlistForm({
   buttonText = 'Join the Waiting List',
   className = '',
 }: WaitlistFormProps) {
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [industry, setIndustry] = useState('')
   const [state, setState] = useState<FormState>('idle')
   const [errorMessage, setErrorMessage] = useState('')
 
@@ -30,8 +41,18 @@ export function WaitlistForm({
     e.preventDefault()
     setErrorMessage('')
 
+    if (!name.trim()) {
+      setErrorMessage('Please enter your name')
+      return
+    }
+
     if (!validateEmail(email)) {
       setErrorMessage('Please enter a valid email address')
+      return
+    }
+
+    if (!industry) {
+      setErrorMessage('Please select your industry')
       return
     }
 
@@ -43,7 +64,9 @@ export function WaitlistForm({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          name: name.trim(),
           email,
+          industry,
           source,
           ...utmParams,
         }),
@@ -57,7 +80,9 @@ export function WaitlistForm({
 
       setState('success')
       trackWaitlistSignup(source)
+      setName('')
       setEmail('')
+      setIndustry('')
     } catch (error) {
       setState('error')
       setErrorMessage(
@@ -81,23 +106,44 @@ export function WaitlistForm({
 
   return (
     <form onSubmit={handleSubmit} className={`w-full ${className}`}>
-      <div className="flex flex-col gap-3 sm:flex-row sm:gap-2">
+      <div className="flex flex-col gap-3">
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your name"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+          disabled={state === 'submitting'}
+          required
+        />
         <input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter your email"
-          className="flex-1 rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+          placeholder="Your email"
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
           disabled={state === 'submitting'}
           required
         />
+        <select
+          value={industry}
+          onChange={(e) => setIndustry(e.target.value)}
+          className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base text-gray-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
+          disabled={state === 'submitting'}
+          required
+        >
+          <option value="" disabled>Select your industry</option>
+          {industries.map((ind) => (
+            <option key={ind} value={ind}>{ind}</option>
+          ))}
+        </select>
         <button
           type="submit"
           disabled={state === 'submitting'}
-          className="rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-full rounded-lg bg-brand-600 px-6 py-3 font-semibold text-white transition-colors hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {state === 'submitting' ? (
-            <span className="inline-flex items-center gap-2">
+            <span className="inline-flex items-center justify-center gap-2">
               <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24">
                 <circle
                   className="opacity-25"
