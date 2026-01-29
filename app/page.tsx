@@ -12,7 +12,7 @@ export default function Home() {
       </Suspense>
 
       {/* Hero + Primary CTA */}
-      <section className="relative bg-gradient-to-b from-brand-50 to-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <section className="relative bg-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <img
             src="/logo.jpg"
@@ -36,7 +36,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute -top-24 right-0 -z-10 h-[400px] w-[400px] rounded-full bg-brand-100 opacity-50 blur-3xl" />
       </section>
 
       {/* The Problem */}
