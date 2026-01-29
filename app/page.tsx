@@ -78,10 +78,15 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-white px-4 py-6 sm:px-6 lg:px-8">
-        <p className="text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} HMO Hunter
-        </p>
+      <footer className="bg-brand-600 px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-xl text-center">
+          <p className="text-brand-100">
+            Priority access. Founders pricing. No spam.
+          </p>
+          <p className="mt-6 text-sm text-brand-200">
+            &copy; {new Date().getFullYear()} HMO Hunter
+          </p>
+        </div>
       </footer>
     </main>
   )
