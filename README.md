@@ -1,182 +1,86 @@
-# HMO Hunter Landing Page
+# HMO Hunter
 
-A production-ready "Coming Soon" landing page for HMO Hunter, a UK HMO deal analysis app.
+## Find high-yield HMO opportunities—before you commit
 
-## Tech Stack
+**HMO Hunter** helps property investors and developers uncover **existing and potential high-yield HMO opportunities**—fast.
 
-- **Framework:** Next.js 16 (App Router)
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS 4
-- **Deployment:** Vercel (recommended)
+Our platform intelligently analyses properties against **current UK government and local authority regulations**, so you can identify compliant, viable HMOs before you invest time or capital.
 
-## Local Development
+---
 
-### Prerequisites
+### What you get
 
-- Node.js 18+
-- npm
+* **Discover HMO-ready & conversion-potential properties**
+* **Built-in compliance checks** against up-to-date licensing and planning rules
+* **Data-led insights** to reduce risk and maximise returns
+* **Save weeks of manual research in minutes**
 
-### Setup
+Whether you're scaling a portfolio or validating your next deal, **HMO Hunter** gives you clarity and confidence—**before** you commit.
 
-1. Clone the repository:
+---
 
-```bash
-git clone https://github.com/Elayronline/hmo-landing-page.git
-cd hmo-landing-page
-```
+## Join the waiting list
 
-2. Install dependencies:
+Be first to access HMO Hunter at launch.
+
+**Early access perks** (for waiting list members):
+
+* Priority onboarding
+* Founders-only pricing
+* Early feature influence
+
+*No spam. Just product updates and launch access.*
+
+---
+
+### Who it's for
+
+* Property investors
+* Developers
+* Deal sourcers
+* Portfolio managers
+
+Built for the UK market.
+
+---
+
+### FAQs
+
+**Is this UK-only?**
+Yes—HMO Hunter is built specifically around UK national and local authority regulations.
+
+**When are you launching?**
+We're onboarding waiting list users first. Join to get priority access.
+
+**Will this replace manual due diligence?**
+It dramatically reduces research time by surfacing compliant opportunities fast—final checks still recommended.
+
+---
+
+## Development
+
+### Local Setup
 
 ```bash
 npm install
-```
-
-3. Create a `.env.local` file (optional):
-
-```bash
-cp .env.example .env.local
-```
-
-4. Start the development server:
-
-```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000)
 
-### Viewing Waitlist Signups (Dev Mode)
+### Deploy to Vercel
 
-In development, signups are saved to `data/waitlist.json`. You can also view them via the API:
-
-```bash
-curl http://localhost:3000/api/waitlist
-```
-
-## Deployment to Vercel
-
-### Quick Deploy
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com) and sign in
-3. Click "New Project" and import your repository
-4. Framework will be auto-detected as Next.js
-5. Add environment variables (see below)
-6. Click "Deploy"
-
-Your site will be live at `your-project.vercel.app` (you can rename to something like `hmohunter.vercel.app`).
+1. Push to GitHub
+2. Import to [Vercel](https://vercel.com)
+3. Set environment variable `WAITLIST_WEBHOOK_URL` (optional, for Google Sheets integration)
 
 ### Environment Variables
 
-Set these in Vercel's project settings under "Environment Variables":
+| Variable | Description |
+|----------|-------------|
+| `WAITLIST_WEBHOOK_URL` | Webhook URL to forward signups (e.g., Google Sheets via Make/Zapier) |
+| `NEXT_PUBLIC_SITE_URL` | Your site's canonical URL for SEO |
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `WAITLIST_WEBHOOK_URL` | No | Webhook URL to forward signups (e.g., Google Sheets via Make/Zapier) |
-| `NEXT_PUBLIC_SITE_URL` | No | Your site's canonical URL for SEO (defaults to Vercel URL) |
+---
 
-## Waitlist Webhook Setup (Google Sheets)
-
-The easiest free approach is to use **Make** (formerly Integromat) or **Zapier** to connect form submissions to Google Sheets.
-
-### Option A: Make.com (Recommended)
-
-1. Create a free account at [make.com](https://make.com)
-2. Create a new scenario with:
-   - **Trigger:** Webhooks > Custom webhook
-   - **Action:** Google Sheets > Add a Row
-3. Copy the webhook URL from the trigger
-4. Add it as `WAITLIST_WEBHOOK_URL` in Vercel
-
-### Option B: Zapier
-
-1. Create a free account at [zapier.com](https://zapier.com)
-2. Create a new Zap:
-   - **Trigger:** Webhooks by Zapier > Catch Hook
-   - **Action:** Google Sheets > Create Spreadsheet Row
-3. Copy the webhook URL
-4. Add it as `WAITLIST_WEBHOOK_URL` in Vercel
-
-### Data Sent to Webhook
-
-```json
-{
-  "email": "user@example.com",
-  "source": "hero",
-  "timestamp": "2025-01-29T12:00:00.000Z",
-  "utm_source": "twitter",
-  "utm_medium": "social",
-  "utm_campaign": "launch"
-}
-```
-
-## SEO & Metadata Configuration
-
-### Site Metadata
-
-Edit `app/layout.tsx` to update:
-
-- Page title and description
-- OpenGraph tags
-- Twitter card settings
-- Keywords
-
-### OpenGraph Image
-
-Replace `public/og-image.png` with your own image (1200x630px recommended).
-
-### Favicon
-
-Replace the following files in `public/`:
-
-- `favicon.ico` (32x32 or multi-size)
-- `apple-touch-icon.png` (180x180)
-
-### Structured Data
-
-The layout includes Schema.org `SoftwareApplication` structured data. Modify in `app/layout.tsx` if needed.
-
-## Analytics
-
-The codebase includes placeholder analytics functions in `lib/analytics.ts`. To integrate your analytics provider:
-
-1. Open `lib/analytics.ts`
-2. Uncomment and configure the relevant provider (Plausible, GA4, etc.)
-3. Or replace with your own implementation
-
-## Project Structure
-
-```
-├── app/
-│   ├── api/
-│   │   └── waitlist/
-│   │       └── route.ts      # Waitlist API endpoint
-│   ├── globals.css           # Tailwind imports & custom styles
-│   ├── layout.tsx            # Root layout with SEO metadata
-│   └── page.tsx              # Landing page
-├── components/
-│   └── WaitlistForm.tsx      # Reusable email capture form
-├── lib/
-│   ├── analytics.ts          # Analytics helper functions
-│   └── utm.ts                # UTM parameter handling
-├── public/
-│   ├── favicon.ico           # Add your favicon
-│   └── og-image.png          # Add your OG image
-├── data/                     # Local waitlist storage (dev only, gitignored)
-├── .env.example              # Example environment variables
-└── README.md                 # This file
-```
-
-## Custom Domain
-
-After deploying to Vercel:
-
-1. Go to your project settings
-2. Click "Domains"
-3. Add your custom domain
-4. Update DNS records as instructed
-5. Update `NEXT_PUBLIC_SITE_URL` environment variable
-
-## License
-
-Private - All rights reserved.
+© HMO Hunter
