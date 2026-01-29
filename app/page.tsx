@@ -14,7 +14,12 @@ export default function Home() {
       {/* Hero + Primary CTA */}
       <section className="relative bg-gradient-to-b from-brand-50 to-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+          <img
+            src="/logo.jpeg"
+            alt="HMO Hunter"
+            className="mx-auto h-24 w-auto sm:h-32"
+          />
+          <h1 className="mt-6 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
             HMO Hunter
           </h1>
 
