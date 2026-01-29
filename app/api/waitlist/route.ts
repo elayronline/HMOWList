@@ -1,44 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { promises as fs } from 'fs'
-import path from 'path'
-
-interface WaitlistEntry {
-  name: string
-  email: string
-  industry: string
-  source: string
-  timestamp: string
-  utm_source?: string
-  utm_medium?: string
-  utm_campaign?: string
-  utm_term?: string
-  utm_content?: string
-}
-
-const DATA_DIR = path.join(process.cwd(), 'data')
-const WAITLIST_FILE = path.join(DATA_DIR, 'waitlist.json')
-
-async function ensureDataDir() {
-  try {
-    await fs.access(DATA_DIR)
-  } catch {
-    await fs.mkdir(DATA_DIR, { recursive: true })
-  }
-}
-
-async function readWaitlist(): Promise<WaitlistEntry[]> {
-  try {
-    const data = await fs.readFile(WAITLIST_FILE, 'utf-8')
-    return JSON.parse(data)
-  } catch {
-    return []
-  }
-}
-
-async function writeWaitlist(entries: WaitlistEntry[]) {
-  await ensureDataDir()
-  await fs.writeFile(WAITLIST_FILE, JSON.stringify(entries, null, 2))
-}
+import { supabase } from '@/lib/supabase'
 
 function isValidEmail(email: string): boolean {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -76,14 +37,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Validate industry
-    if (!industry || typeof industry !== 'string') {
-      return NextResponse.json(
-        { error: 'Industry is required' },
-        { status: 400 }
-      )
-    }
-
     const normalizedEmail = email.toLowerCase().trim()
 
     if (!isValidEmail(normalizedEmail)) {
@@ -93,63 +46,47 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const entry: WaitlistEntry = {
+    // Validate industry
+    if (!industry || typeof industry !== 'string') {
+      return NextResponse.json(
+        { error: 'Industry is required' },
+        { status: 400 }
+      )
+    }
+
+    // Check for duplicate
+    const { data: existing } = await supabase
+      .from('waitlist')
+      .select('email')
+      .eq('email', normalizedEmail)
+      .single()
+
+    if (existing) {
+      return NextResponse.json(
+        { message: "You're already on the list!", alreadyExists: true },
+        { status: 200 }
+      )
+    }
+
+    // Insert into Supabase
+    const { error } = await supabase.from('waitlist').insert({
       name: name.trim(),
       email: normalizedEmail,
       industry,
       source,
-      timestamp: new Date().toISOString(),
-      ...(utm_source && { utm_source }),
-      ...(utm_medium && { utm_medium }),
-      ...(utm_campaign && { utm_campaign }),
-      ...(utm_term && { utm_term }),
-      ...(utm_content && { utm_content }),
-    }
+      utm_source: utm_source || null,
+      utm_medium: utm_medium || null,
+      utm_campaign: utm_campaign || null,
+      utm_term: utm_term || null,
+      utm_content: utm_content || null,
+    })
 
-    const webhookUrl = process.env.WAITLIST_WEBHOOK_URL
-
-    // If webhook URL is configured, forward the data
-    if (webhookUrl) {
-      try {
-        const webhookResponse = await fetch(webhookUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(entry),
-        })
-
-        if (!webhookResponse.ok) {
-          console.error('Webhook failed:', await webhookResponse.text())
-          // Don't fail the request, still save locally as backup
-        }
-      } catch (webhookError) {
-        console.error('Webhook error:', webhookError)
-        // Don't fail the request, still save locally as backup
-      }
-    }
-
-    // In development or as a backup, save to local file
-    if (process.env.NODE_ENV === 'development' || !webhookUrl) {
-      const waitlist = await readWaitlist()
-
-      // Check for duplicate
-      const exists = waitlist.some((e) => e.email === normalizedEmail)
-      if (exists) {
-        return NextResponse.json(
-          { message: 'You\'re already on the list!', alreadyExists: true },
-          { status: 200 }
-        )
-      }
-
-      waitlist.push(entry)
-      await writeWaitlist(waitlist)
-    }
-
-    // If no webhook configured in production, still return success
-    // (they can check the logs or we save locally as fallback)
-    if (!webhookUrl && process.env.NODE_ENV === 'production') {
-      console.log('Waitlist signup (no webhook configured):', entry)
+    if (error) {
+      console.error('Supabase error:', error)
+      return NextResponse.json(
+        { error: 'Something went wrong. Please try again.' },
+        { status: 500 }
+      )
     }
 
     return NextResponse.json(
@@ -160,27 +97,6 @@ export async function POST(request: NextRequest) {
     console.error('Waitlist error:', error)
     return NextResponse.json(
       { error: 'Something went wrong. Please try again.' },
-      { status: 500 }
-    )
-  }
-}
-
-// GET endpoint to retrieve waitlist (dev only)
-export async function GET(request: NextRequest) {
-  if (process.env.NODE_ENV !== 'development') {
-    return NextResponse.json(
-      { error: 'Not available in production' },
-      { status: 403 }
-    )
-  }
-
-  try {
-    const waitlist = await readWaitlist()
-    return NextResponse.json({ count: waitlist.length, entries: waitlist })
-  } catch (error) {
-    console.error('Error reading waitlist:', error)
-    return NextResponse.json(
-      { error: 'Failed to read waitlist' },
       { status: 500 }
     )
   }
