@@ -23,15 +23,11 @@ export default function Home() {
           </p>
 
           {/* Primary CTA */}
-          <div className="mx-auto mt-10 max-w-sm">
-            <div className="rounded-xl bg-brand-600 px-5 py-5 shadow-lg">
-              <p className="text-sm font-medium text-brand-100">
-                Get early access
-              </p>
-              <div className="mt-3">
-                <WaitlistForm source="hero" buttonText="Join the Waiting List" />
-              </div>
-            </div>
+          <div className="mx-auto mt-10 max-w-md">
+            <p className="mb-3 text-sm font-medium text-gray-500">
+              Get early access
+            </p>
+            <WaitlistForm source="hero" buttonText="Join the Waiting List" />
           </div>
         </div>
 
