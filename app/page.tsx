@@ -77,21 +77,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA */}
-      <section className="bg-brand-600 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-xl text-center">
-          <h2 className="text-2xl font-bold text-white sm:text-3xl">
-            Join the waiting list
-          </h2>
-          <p className="mt-3 text-brand-100">
-            Priority access. Founders pricing. No spam.
-          </p>
-          <div className="mx-auto mt-8 max-w-md">
-            <WaitlistForm source="footer_cta" buttonText="Get Early Access" />
-          </div>
-        </div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-white px-4 py-6 sm:px-6 lg:px-8">
         <p className="text-center text-sm text-gray-500">
