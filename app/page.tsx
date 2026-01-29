@@ -19,16 +19,18 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 text-xl font-semibold text-gray-800 sm:text-2xl">
-            Find high-yield HMO opportunities—before you commit.
+            Find high-yield HMO opportunities before you commit.
           </p>
 
           {/* Primary CTA */}
-          <div className="mx-auto mt-10 max-w-md rounded-2xl bg-brand-600 p-6 shadow-xl sm:p-8">
-            <p className="text-lg font-medium text-white">
-              Get early access
-            </p>
-            <div className="mt-4">
-              <WaitlistForm source="hero" buttonText="Join the Waiting List" />
+          <div className="mx-auto mt-10 max-w-sm">
+            <div className="rounded-xl bg-brand-600 px-5 py-5 shadow-lg">
+              <p className="text-sm font-medium text-brand-100">
+                Get early access
+              </p>
+              <div className="mt-3">
+                <WaitlistForm source="hero" buttonText="Join the Waiting List" />
+              </div>
             </div>
           </div>
         </div>
@@ -43,7 +45,7 @@ export default function Home() {
             The problem
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Finding compliant, high-yield HMOs takes weeks of manual research—checking licensing,
+            Finding compliant, high-yield HMOs takes weeks of manual research. Checking licensing,
             planning rules, and local regulations across multiple sources.
           </p>
         </div>
@@ -56,8 +58,8 @@ export default function Home() {
             Our approach
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            One platform that analyses properties against current UK regulations—so you can
-            identify viable HMOs in minutes, not weeks.
+            One platform that analyses properties against current UK regulations. Identify
+            viable HMOs in minutes, not weeks.
           </p>
 
           <div className="mt-8 inline-flex flex-wrap justify-center gap-3">

@@ -1,21 +1,19 @@
 # HMO Hunter
 
-## Find high-yield HMO opportunities—before you commit
+## Find high-yield HMO opportunities before you commit
 
-**HMO Hunter** helps property investors and developers uncover **existing and potential high-yield HMO opportunities**—fast.
+**HMO Hunter** helps property investors and developers uncover existing and potential high-yield HMO opportunities, fast.
 
-Our platform intelligently analyses properties against **current UK government and local authority regulations**, so you can identify compliant, viable HMOs before you invest time or capital.
+Our platform analyses properties against current UK government and local authority regulations, so you can identify compliant, viable HMOs before you invest time or capital.
 
 ---
 
 ### What you get
 
-* **Discover HMO-ready & conversion-potential properties**
-* **Built-in compliance checks** against up-to-date licensing and planning rules
-* **Data-led insights** to reduce risk and maximise returns
-* **Save weeks of manual research in minutes**
-
-Whether you're scaling a portfolio or validating your next deal, **HMO Hunter** gives you clarity and confidence—**before** you commit.
+* Discover HMO-ready and conversion-potential properties
+* Built-in compliance checks against up-to-date licensing and planning rules
+* Data-led insights to reduce risk and maximise returns
+* Save weeks of manual research in minutes
 
 ---
 
@@ -23,10 +21,10 @@ Whether you're scaling a portfolio or validating your next deal, **HMO Hunter** 
 
 Be first to access HMO Hunter at launch.
 
-**Early access perks** (for waiting list members):
+**Early access perks:**
 
 * Priority onboarding
-* Founders-only pricing
+* Founders pricing
 * Early feature influence
 
 *No spam. Just product updates and launch access.*
@@ -47,13 +45,13 @@ Built for the UK market.
 ### FAQs
 
 **Is this UK-only?**
-Yes—HMO Hunter is built specifically around UK national and local authority regulations.
+Yes. HMO Hunter is built specifically around UK national and local authority regulations.
 
 **When are you launching?**
 We're onboarding waiting list users first. Join to get priority access.
 
 **Will this replace manual due diligence?**
-It dramatically reduces research time by surfacing compliant opportunities fast—final checks still recommended.
+It dramatically reduces research time by surfacing compliant opportunities fast. Final checks still recommended.
 
 ---
 
