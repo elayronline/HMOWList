@@ -15,7 +15,7 @@ export default function Home() {
       <section className="relative bg-gradient-to-b from-brand-50 to-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <img
-            src="/logo.jpeg"
+            src="/logo.jpg"
             alt="HMO Hunter"
             className="mx-auto h-24 w-auto sm:h-32"
           />
