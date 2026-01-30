@@ -27,6 +27,19 @@ export default function Home() {
             Find high-yield HMO opportunities before you commit.
           </p>
 
+          {/* Video */}
+          <div className="mx-auto mt-10 max-w-2xl">
+            <div className="aspect-video overflow-hidden rounded-xl shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/2nwJ7qtjvOQ"
+                title="HMO Hunter"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="h-full w-full"
+              />
+            </div>
+          </div>
+
           {/* Primary CTA */}
           <div className="mx-auto mt-10 max-w-md">
             <p className="mb-3 text-sm font-medium text-gray-500">
@@ -36,21 +49,6 @@ export default function Home() {
           </div>
         </div>
 
-      </section>
-
-      {/* Video Section */}
-      <section className="bg-gray-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-        <div className="mx-auto max-w-3xl">
-          <div className="aspect-video overflow-hidden rounded-xl shadow-lg">
-            <iframe
-              src="https://www.youtube.com/embed/2nwJ7qtjvOQ"
-              title="HMO Hunter"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="h-full w-full"
-            />
-          </div>
-        </div>
       </section>
 
       {/* The Problem */}
