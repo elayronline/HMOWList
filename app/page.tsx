@@ -28,7 +28,7 @@ export default function Home() {
           </p>
 
           {/* Video */}
-          <div className="mx-auto mt-10 max-w-2xl">
+          <div className="mx-auto mt-14 max-w-2xl">
             <div className="aspect-video overflow-hidden rounded-xl shadow-lg">
               <iframe
                 src="https://www.youtube.com/embed/2nwJ7qtjvOQ"
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Primary CTA */}
-          <div className="mx-auto mt-10 max-w-md">
+          <div className="mx-auto mt-14 max-w-md">
             <p className="mb-3 text-sm font-medium text-gray-500">
               Get early access
             </p>
