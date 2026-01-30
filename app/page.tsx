@@ -31,7 +31,7 @@ export default function Home() {
           <div className="mx-auto mt-14 max-w-2xl">
             <div className="aspect-video overflow-hidden rounded-xl shadow-lg">
               <iframe
-                src="https://www.youtube.com/embed/2nwJ7qtjvOQ"
+                src="https://www.youtube.com/embed/2nwJ7qtjvOQ?list=PLYQeMpV5LdmpEP_Y-RuSXZSlEMVY9RWx3"
                 title="HMO Hunter"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
