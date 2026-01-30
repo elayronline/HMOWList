@@ -12,7 +12,7 @@ export default function Home() {
       </Suspense>
 
       {/* Hero + Primary CTA */}
-      <section className="relative bg-white px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <section className="relative bg-white px-4 pt-16 pb-8 sm:px-6 sm:pt-24 sm:pb-10 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <img
             src="/logo.jpg"
@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Primary CTA */}
-          <div className="mx-auto mt-20 max-w-md">
+          <div className="mx-auto mt-28 max-w-md">
             <p className="mb-3 text-sm font-medium text-gray-500">
               Get early access
             </p>
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* The Problem */}
-      <section className="border-t border-gray-100 bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+      <section className="border-t border-gray-100 bg-white px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
             The problem
