@@ -102,7 +102,7 @@ export function WaitlistForm({
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Your name"
+          placeholder="Name"
           className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
           disabled={state === 'submitting'}
           required
@@ -111,7 +111,7 @@ export function WaitlistForm({
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email"
+          placeholder="Email"
           className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
           disabled={state === 'submitting'}
           required
@@ -120,7 +120,7 @@ export function WaitlistForm({
           type="text"
           value={industry}
           onChange={(e) => setIndustry(e.target.value)}
-          placeholder="Your industry"
+          placeholder="Industry"
           className="w-full rounded-lg border border-gray-300 px-4 py-3 text-base placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20"
           disabled={state === 'submitting'}
           required
