@@ -38,6 +38,21 @@ export default function Home() {
 
       </section>
 
+      {/* Video Section */}
+      <section className="bg-gray-50 px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+        <div className="mx-auto max-w-3xl">
+          <div className="aspect-video overflow-hidden rounded-xl shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/2nwJ7qtjvOQ"
+              title="HMO Hunter"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="h-full w-full"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* The Problem */}
       <section className="border-t border-gray-100 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
