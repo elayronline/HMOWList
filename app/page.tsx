@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           {/* Primary CTA */}
-          <div className="mx-auto mt-14 max-w-md">
+          <div className="mx-auto mt-20 max-w-md">
             <p className="mb-3 text-sm font-medium text-gray-500">
               Get early access
             </p>
