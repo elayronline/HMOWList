@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* The Problem */}
-      <section className="border-t border-gray-100 bg-white px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
+      <section className="border-t border-gray-100 bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
             The problem
