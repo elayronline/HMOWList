@@ -20,7 +20,7 @@ const steps = [
     icon: Rocket,
     step: '3',
     title: 'Start sourcing',
-    description: 'Search, filter, and find viable HMOs immediately.',
+    description: 'You\'ll receive an access link in your email when beta goes live. Click it and start finding viable HMOs immediately.',
   },
 ]
 
