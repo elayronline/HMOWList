@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion'
 
 const badges = [
-  { label: 'Local Authorities', active: true },
-  { label: 'Housing Associations', active: false },
-  { label: 'Private Investors', active: false },
-  { label: 'Council Housing Teams', active: false },
+  'Local Authorities',
+  'Housing Associations',
+  'Private Investors',
+  'Council Housing Teams',
 ]
 
 export function SocialProofBar() {
@@ -25,14 +25,10 @@ export function SocialProofBar() {
         <div className="mt-5 flex flex-wrap justify-center gap-3">
           {badges.map((badge) => (
             <span
-              key={badge.label}
-              className={`rounded-full px-5 py-2 text-[0.82rem] font-semibold ${
-                badge.active
-                  ? 'border border-accent/30 bg-accent/10 text-accent-dark'
-                  : 'border border-border bg-white text-text-muted'
-              }`}
+              key={badge}
+              className="rounded-full border border-border bg-white px-5 py-2 text-[0.82rem] font-semibold text-text-muted"
             >
-              {badge.label}
+              {badge}
             </span>
           ))}
         </div>

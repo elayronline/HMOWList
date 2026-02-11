@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'What is HMO Hunter?',
     answer:
-      'HMO Hunter is the UK\'s first dedicated sourcing platform for Houses in Multiple Occupation. It brings together compliance data, licensing status, Article 4 mapping, yield projections, and property search into one place — so housing professionals can find viable HMOs and untapped conversion opportunities faster than ever.',
+      'HMO Hunter is the UK\'s first dedicated sourcing platform for Houses in Multiple Occupation. It brings together compliance data, licensing status, Article 4 mapping, yield projections, and property search into one place , so housing professionals can find viable HMOs and untapped conversion opportunities faster than ever.',
   },
   {
     question: 'Who is HMO Hunter for?',
@@ -23,12 +23,12 @@ const faqs = [
   {
     question: 'Is it free?',
     answer:
-      'Beta access is currently offered at no cost to early adopters. Pricing for the full launch is being finalised — early adopters will receive priority terms.',
+      'Beta access is currently offered at no cost to early adopters. Pricing for the full launch is being finalised , early adopters will receive priority terms.',
   },
   {
     question: 'How is this different from Rightmove, Zoopla, or council registers?',
     answer:
-      "Those platforms weren't built for HMO professionals. HMO Hunter is purpose-built for HMO sourcing — with compliance checks, licensing data, Article 4 mapping, and yield analysis integrated directly into every search. You only see opportunities that are actually viable.",
+      "Those platforms weren't built for HMO professionals. HMO Hunter is purpose-built for HMO sourcing , with compliance checks, licensing data, Article 4 mapping, and yield analysis integrated directly into every search. You only see opportunities that are actually viable.",
   },
   {
     question: 'What data does HMO Hunter use?',

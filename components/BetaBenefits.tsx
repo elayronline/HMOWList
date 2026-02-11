@@ -3,12 +3,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion, useInView, animate } from 'framer-motion'
 import { Rocket, Eye, MessageSquare } from 'lucide-react'
+import { TOTAL_SPOTS, REMAINING, FILLED, FILL_PERCENT } from '@/lib/constants'
 
 const benefits = [
   {
     icon: Rocket,
     title: 'Source From Day One',
-    description: 'Access the live platform immediately. Not a waitlist — a working tool.',
+    description: 'Access the live platform immediately. Not a waitlist , a working tool.',
   },
   {
     icon: Eye,
@@ -43,11 +44,6 @@ function AnimatedCounter({ target }: { target: number }) {
   return <span ref={ref}>{displayValue}</span>
 }
 
-const TOTAL_SPOTS = 100
-const REMAINING = 43
-const FILLED = TOTAL_SPOTS - REMAINING
-const FILL_PERCENT = (FILLED / TOTAL_SPOTS) * 100
-
 export function BetaBenefits() {
   return (
     <section className="bg-bg-alt px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
@@ -58,7 +54,7 @@ export function BetaBenefits() {
           viewport={{ once: true }}
           className="text-center font-[family-name:var(--font-fraunces)] text-2xl font-bold sm:text-3xl"
         >
-          Early adopters don&apos;t just test — they lead.
+          Early adopters don&apos;t just test , they lead.
         </motion.h2>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-3">

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function Footer() {
   return (
     <footer className="border-t border-border bg-bg-alt px-4 py-14 sm:px-6 lg:px-8">
@@ -7,8 +9,10 @@ export function Footer() {
           Find viable HMOs. Spot untapped opportunities. Faster.
         </p>
         <p className="mt-6 text-xs text-text-muted">
-          &copy; {new Date().getFullYear()} HMO Hunter Ltd | Privacy Policy | Terms of Service |
-          hello@hmohunter.co.uk
+          &copy; {new Date().getFullYear()} HMO Hunter Ltd |{' '}
+          <Link href="/privacy" className="hover:underline">Privacy Policy</Link> |{' '}
+          <Link href="/terms" className="hover:underline">Terms of Service</Link> |{' '}
+          <a href="mailto:hmohunteruk@gmail.com">hello@hmohunter.co.uk</a>
         </p>
       </div>
     </footer>

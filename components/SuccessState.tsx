@@ -17,7 +17,7 @@ export function SuccessState() {
   const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(pageUrl)}`
   const emailSubject = encodeURIComponent('HMO Hunter Beta')
   const emailBody = encodeURIComponent(
-    `I just signed up for early access to HMO Hunter — a new UK platform built for HMO sourcing. If you source HMOs for a council, housing association, or as a private investor, worth a look: ${pageUrl}`
+    `I just signed up for early access to HMO Hunter , a new UK platform built for HMO sourcing. If you source HMOs for a council, housing association, or as a private investor, worth a look: ${pageUrl}`
   )
 
   return (

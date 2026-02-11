@@ -37,7 +37,7 @@ export function VideoPlayer() {
         )}
       </div>
       <p className="mt-3 text-center text-sm text-text-muted">
-        ▶ 80 seconds — Watch how HMO Hunter works
+        ▶ Why HMO sourcing is broken, and how we fix it (80 sec)
       </p>
     </div>
   )

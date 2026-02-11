@@ -8,7 +8,7 @@ const pains = [
     icon: Search,
     title: 'Multiple Platforms',
     description:
-      "Rightmove, Zoopla, council registers, planning portals — none of them talk to each other.",
+      "Rightmove, Zoopla, council registers, planning portals , none of them talk to each other.",
   },
   {
     icon: TrendingDown,
@@ -24,9 +24,9 @@ const pains = [
   },
   {
     icon: Clock,
-    title: 'Deals Lost',
+    title: 'Opportunities Lost',
     description:
-      "By the time you've verified a property — someone else has already taken it.",
+      "By the time you've verified a property , someone else has already taken it.",
   },
 ]
 

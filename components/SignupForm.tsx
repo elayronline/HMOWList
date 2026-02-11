@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { getStoredUTMParams } from '@/lib/utm'
+import { REMAINING, TOTAL_SPOTS } from '@/lib/constants'
 import { SuccessState } from './SuccessState'
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error'
@@ -115,7 +116,7 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
 
           <form onSubmit={handleSubmit} className="mt-5">
             {isHero ? (
-              /* Hero: 3 fields — Name, Email, Organisation Type */
+              /* Hero: 3 fields , Name, Email, Organisation Type */
               <div className="space-y-3">
                 <input
                   type="text"
@@ -150,7 +151,7 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
                 </select>
               </div>
             ) : (
-              /* Full: 5 fields — compact 2-col grid */
+              /* Full: 5 fields , compact 2-col grid */
               <div className="space-y-3">
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                   <input
@@ -239,7 +240,7 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
                   Securing your spot...
                 </span>
               ) : (
-                'Get Early Access →'
+                'Secure My Spot'
               )}
             </button>
 
@@ -251,8 +252,13 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
 
           {/* Trust signal */}
           <p className="mt-4 text-center text-xs text-text-muted">
-            Trusted by local authority and housing professionals
+            Built for local authority sourcers, housing associations, investors, and council teams.
           </p>
+          {isHero && (
+            <p className="mt-2 text-center text-xs font-semibold text-accent">
+              {REMAINING} of {TOTAL_SPOTS} beta places remaining
+            </p>
+          )}
         </>
       )}
     </div>

@@ -8,19 +8,19 @@ const steps = [
     icon: UserPlus,
     step: '1',
     title: 'Sign up',
-    description: '10 seconds. Just your name, email, and role.',
+    description: 'Keep your sign up. That\'s all you need to secure your spot.',
   },
   {
     icon: Mail,
     step: '2',
-    title: 'Get your access email',
-    description: 'Within 48 hours with everything you need.',
+    title: 'Get your beta access link',
+    description: 'When beta access is live, you will receive your link to the platform.',
   },
   {
     icon: Rocket,
     step: '3',
-    title: 'Start sourcing',
-    description: 'You\'ll receive an access link in your email when beta goes live. Click it and start finding viable HMOs immediately.',
+    title: 'Start searching',
+    description: 'Sign in and search, filter, and find viable HMOs immediately.',
   },
 ]
 

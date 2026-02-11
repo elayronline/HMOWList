@@ -19,13 +19,13 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hmohunter.co.uk'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'HMO Hunter — Find Viable HMOs. Spot Untapped Opportunities.',
+  title: 'HMO Hunter , Find Viable HMOs. Spot Untapped Opportunities.',
   description:
-    "The UK's first sourcing platform built exclusively for HMO professionals. Search compliance data, licensing status, Article 4 zones, and yield projections — all in one place. Sign up for early beta access.",
+    "The UK's first sourcing platform built exclusively for HMO professionals. Search compliance data, licensing status, Article 4 zones, and yield projections , all in one place. Sign up for early beta access.",
   keywords:
     'HMO, HMO sourcing, HMO platform, house in multiple occupation, HMO licensing, Article 4, HMO investment, housing association, council housing, temporary accommodation',
   openGraph: {
-    title: 'HMO Hunter — Find Viable HMOs. Spot Untapped Opportunities.',
+    title: 'HMO Hunter , Find Viable HMOs. Spot Untapped Opportunities.',
     description:
       "The UK's first sourcing platform built for HMO professionals. Beta access now open.",
     type: 'website',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'HMO Hunter — Find Viable HMOs. Spot Untapped Opportunities.',
+    title: 'HMO Hunter , Find Viable HMOs. Spot Untapped Opportunities.',
     description:
       "The UK's first sourcing platform built for HMO professionals. Beta access now open.",
   },
