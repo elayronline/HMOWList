@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
   display: 'swap',
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hmohunter.co.uk'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hmohunter.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     title: 'HMO Hunter , Find Viable HMOs. Spot Untapped Opportunities.',
     description:
       "The UK's first sourcing platform built for HMO professionals. Beta access now open.",
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,
@@ -50,7 +51,12 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/favicon.ico',
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/icon-192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/icon-512.png', sizes: '512x512', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
 }
 
