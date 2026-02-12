@@ -109,8 +109,8 @@ export default function TermsOfService() {
           <h2 className="text-lg font-bold text-text">11. Contact</h2>
           <p className="mt-2">
             If you have any questions about these Terms, contact us at{' '}
-            <a href="mailto:hmohunteruk@gmail.com" className="text-accent hover:underline">
-              hello@hmohunter.co.uk
+            <a href="mailto:hello@hmohunter.com" className="text-accent hover:underline">
+              hello@hmohunter.com
             </a>.
           </p>
         </section>

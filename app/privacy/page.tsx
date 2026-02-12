@@ -21,12 +21,12 @@ export default function PrivacyPolicy() {
         <section>
           <h2 className="text-lg font-bold text-text">1. Who we are</h2>
           <p className="mt-2">
-            HMO Hunter Ltd (&quot;HMO Hunter&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;) operates the website hmohunter.co.uk. We are committed to protecting your personal data and your privacy. This policy explains how we collect, use, and safeguard your information when you visit our website or sign up for beta access.
+            HMO Hunter Ltd (&quot;HMO Hunter&quot;, &quot;we&quot;, &quot;us&quot;, &quot;our&quot;) operates the website hmohunter.com. We are committed to protecting your personal data and your privacy. This policy explains how we collect, use, and safeguard your information when you visit our website or sign up for beta access.
           </p>
           <p className="mt-2">
             For any questions about this policy, contact us at{' '}
-            <a href="mailto:hmohunteruk@gmail.com" className="text-accent hover:underline">
-              hello@hmohunter.co.uk
+            <a href="mailto:hello@hmohunter.com" className="text-accent hover:underline">
+              hello@hmohunter.com
             </a>.
           </p>
         </section>
@@ -106,8 +106,8 @@ export default function PrivacyPolicy() {
           </ul>
           <p className="mt-2">
             To exercise any of these rights, email us at{' '}
-            <a href="mailto:hmohunteruk@gmail.com" className="text-accent hover:underline">
-              hello@hmohunter.co.uk
+            <a href="mailto:hello@hmohunter.com" className="text-accent hover:underline">
+              hello@hmohunter.com
             </a>.
           </p>
         </section>

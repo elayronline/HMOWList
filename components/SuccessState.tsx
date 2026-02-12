@@ -6,7 +6,7 @@ import { CheckCircle, Linkedin, Copy, Mail } from 'lucide-react'
 export function SuccessState() {
   const [copied, setCopied] = useState(false)
 
-  const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://hmohunter.co.uk'
+  const pageUrl = typeof window !== 'undefined' ? window.location.href : 'https://hmohunter.com'
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(pageUrl)

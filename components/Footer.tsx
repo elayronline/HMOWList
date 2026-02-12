@@ -12,7 +12,7 @@ export function Footer() {
           &copy; {new Date().getFullYear()} HMO Hunter Ltd |{' '}
           <Link href="/privacy" className="hover:underline">Privacy Policy</Link> |{' '}
           <Link href="/terms" className="hover:underline">Terms of Service</Link> |{' '}
-          <a href="mailto:hmohunteruk@gmail.com">hello@hmohunter.co.uk</a>
+          <a href="mailto:hello@hmohunter.com">hello@hmohunter.com</a>
         </p>
       </div>
     </footer>
