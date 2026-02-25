@@ -29,6 +29,11 @@ export default function Home() {
       <PainSection />
       <BeforeAfter />
       <SolutionSection />
+
+      <Suspense fallback={null}>
+        <ICPTabs />
+      </Suspense>
+
       <BetaBenefits />
 
       <HowItWorks />
@@ -45,10 +50,6 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <Suspense fallback={null}>
-        <ICPTabs />
-      </Suspense>
 
       <FAQAccordion />
 
