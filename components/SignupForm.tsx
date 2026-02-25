@@ -247,7 +247,7 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
 
             {errorMessage && <p className="mt-2 text-sm text-red-500">{errorMessage}</p>}
             <p className="mt-2 text-center text-[0.78rem] text-text-muted">
-              {microcopy || 'No card required. Takes 10 seconds.'}
+              {microcopy || 'Takes 10 seconds. Lock in Pro access at £19/mo — forever.'}
             </p>
           </form>
 

@@ -27,8 +27,9 @@ export function SuccessState() {
         You&apos;re In.
       </h3>
       <p className="mt-2 text-sm text-text-muted">
-        Welcome to HMO Hunter. We&apos;ll email you within 48 hours with your access details and
-        everything you need to get started.
+        Welcome to HMO Hunter. When the beta goes live, we&apos;ll send your payment and access
+        link straight to your inbox. You&apos;ve locked in Pro access at £19/mo — the lowest rate
+        we&apos;ll ever offer.
       </p>
 
       <div className="mt-6 border-t border-border pt-6">

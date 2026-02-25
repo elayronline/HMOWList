@@ -21,9 +21,9 @@ const faqs = [
       'You get access to the live working platform from day one. You can source real properties immediately. As an early adopter, you also get first look at new features and a direct voice in shaping the product roadmap.',
   },
   {
-    question: 'Is it free?',
+    question: 'How much does it cost?',
     answer:
-      'Beta access is currently offered at no cost to early adopters. Pricing for the full launch is being finalised , early adopters will receive priority terms.',
+      'Beta users get full Pro access for just £19/month — locked in at that rate forever, even after launch when the price goes up. You\u2019re guaranteed the lowest rate HMO Hunter will ever offer.',
   },
   {
     question: 'How is this different from Rightmove, Zoopla, or council registers?',
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: 'When will I get access after signing up?',
     answer:
-      "We're onboarding early adopters in waves. You'll receive an email within 48 hours of signing up with your access details and next steps.",
+      "Once you sign up, you'll receive an email with your payment and access link as soon as the beta is live. Keep an eye on your inbox — we'll let you know as soon as it's ready.",
   },
 ]
 

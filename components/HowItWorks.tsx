@@ -8,13 +8,13 @@ const steps = [
     icon: UserPlus,
     step: '1',
     title: 'Enter your details',
-    description: 'Fill in 3 fields. No card, no commitment. Takes 10 seconds.',
+    description: 'Fill in 3 fields. Takes 10 seconds. No obligation.',
   },
   {
     icon: Mail,
     step: '2',
     title: 'Get your access link',
-    description: 'You\u2019ll receive an email within 48 hours with your login and onboarding guide.',
+    description: 'When the beta goes live, you\u2019ll receive your payment and access link via email. Lock in £19/mo Pro access before the price goes up.',
   },
   {
     icon: Rocket,

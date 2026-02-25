@@ -41,7 +41,7 @@ export default function Home() {
             header="Secure Your Beta Spot"
             subheader="10 seconds. 5 fields. You're in."
             variant="full"
-            microcopy="No card required. Beta places are limited."
+            microcopy="Takes 10 seconds. Lock in Pro access at £19/mo — forever."
           />
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function Home() {
             }}
             className="mt-6 cursor-pointer rounded-lg bg-accent px-8 py-3 font-bold text-white transition-colors hover:bg-accent-dark"
           >
-            Start Sourcing Free
+            Join the Beta
           </button>
           <p className="mt-3 text-xs text-text-muted">{REMAINING} of {TOTAL_SPOTS} beta places remaining</p>
         </div>

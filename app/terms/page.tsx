@@ -33,7 +33,8 @@ export default function TermsOfService() {
           <ul className="mt-2 list-disc space-y-1 pl-6">
             <li>The platform is under active development and may contain bugs or incomplete features</li>
             <li>Features may change, be added, or be removed without prior notice</li>
-            <li>Beta access is provided at no cost and may be revoked at our discretion</li>
+            <li>Beta users receive Pro access at a locked-in rate of £19/month, which will not increase after launch</li>
+            <li>Access may be revoked at our discretion</li>
             <li>Service availability is not guaranteed during the beta period</li>
           </ul>
         </section>

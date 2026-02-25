@@ -8,8 +8,8 @@ import { TOTAL_SPOTS, REMAINING, FILLED, FILL_PERCENT } from '@/lib/constants'
 const benefits = [
   {
     icon: Rocket,
-    title: 'Source From Day One',
-    description: 'Access the live platform immediately. Not a waitlist , a working tool.',
+    title: 'Pro Access at £19/mo — Forever',
+    description: 'Lock in the lowest price HMO Hunter will ever offer. After launch, the price goes up — but yours won\u2019t.',
   },
   {
     icon: Eye,
