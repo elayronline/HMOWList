@@ -10,7 +10,7 @@ export function VideoPlayer() {
         />
       </div>
       <p className="mt-3 text-center text-sm text-text-muted">
-        ▶ Why HMO sourcing is broken, and how we fix it
+        ▶ See how HMO Hunter replaces 5 platforms with one search
       </p>
     </div>
   )

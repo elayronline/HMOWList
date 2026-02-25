@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { getStoredUTMParams } from '@/lib/utm'
 import { REMAINING, TOTAL_SPOTS } from '@/lib/constants'
 import { SuccessState } from './SuccessState'
+import { Shield, CheckCircle } from 'lucide-react'
 
 type FormState = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -250,10 +251,27 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
             </p>
           </form>
 
-          {/* Trust signal */}
-          <p className="mt-4 text-center text-xs text-text-muted">
-            Built for local authority sourcers, housing associations, investors, and council teams.
-          </p>
+          {/* What you get */}
+          <div className="mt-4 space-y-1.5">
+            {[
+              'Search compliance, licensing, and Article 4 data in one place',
+              'Instant yield projections on every property',
+              'First access to new features before public launch',
+            ].map((item) => (
+              <div key={item} className="flex items-start gap-2">
+                <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" />
+                <p className="text-xs text-text-muted">{item}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* GDPR / Trust signal */}
+          <div className="mt-4 flex items-center justify-center gap-1.5">
+            <Shield className="h-3.5 w-3.5 text-text-muted" />
+            <p className="text-[0.7rem] text-text-muted">
+              GDPR compliant. Your data is encrypted and never shared.
+            </p>
+          </div>
           {isHero && (
             <p className="mt-2 text-center text-xs font-semibold text-accent">
               {REMAINING} of {TOTAL_SPOTS} beta places remaining

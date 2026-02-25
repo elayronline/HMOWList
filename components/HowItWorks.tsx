@@ -7,20 +7,20 @@ const steps = [
   {
     icon: UserPlus,
     step: '1',
-    title: 'Sign up',
-    description: 'Keep your sign up. That\'s all you need to secure your spot.',
+    title: 'Enter your details',
+    description: 'Fill in 3 fields. No card, no commitment. Takes 10 seconds.',
   },
   {
     icon: Mail,
     step: '2',
-    title: 'Get your beta access link',
-    description: 'When beta access is live, you will receive your link to the platform.',
+    title: 'Get your access link',
+    description: 'You\u2019ll receive an email within 48 hours with your login and onboarding guide.',
   },
   {
     icon: Rocket,
     step: '3',
-    title: 'Start searching',
-    description: 'Sign in and search, filter, and find viable HMOs immediately.',
+    title: 'Start sourcing',
+    description: 'Search, filter, and find compliant HMOs immediately. No training required.',
   },
 ]
 

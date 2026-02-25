@@ -13,9 +13,8 @@ export function HeroSection() {
             Find Viable HMOs. Spot Untapped Opportunities. Faster.
           </h1>
           <p className="mt-4 text-base text-text-muted">
-            The UK&apos;s first sourcing platform built exclusively for HMO professionals. Search
-            compliance data, licensing status, Article 4 zones, and yield projections , all in one
-            place.
+            Cut HMO sourcing from hours to minutes. Search 300+ council registers, licensing
+            status, Article 4 zones, and yield projections — all in one place.
           </p>
         </div>
 

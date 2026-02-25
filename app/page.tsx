@@ -6,6 +6,7 @@ import { StickyBar } from '@/components/StickyBar'
 import { HeroSection } from '@/components/HeroSection'
 import { SocialProofBar } from '@/components/SocialProofBar'
 import { PainSection } from '@/components/PainSection'
+import { BeforeAfter } from '@/components/BeforeAfter'
 import { SolutionSection } from '@/components/SolutionSection'
 import { BetaBenefits } from '@/components/BetaBenefits'
 import { SignupForm } from '@/components/SignupForm'
@@ -26,6 +27,7 @@ export default function Home() {
       <HeroSection />
       <SocialProofBar />
       <PainSection />
+      <BeforeAfter />
       <SolutionSection />
       <BetaBenefits />
 
@@ -66,7 +68,7 @@ export default function Home() {
             }}
             className="mt-6 cursor-pointer rounded-lg bg-accent px-8 py-3 font-bold text-white transition-colors hover:bg-accent-dark"
           >
-            Secure My Spot
+            Start Sourcing Free
           </button>
           <p className="mt-3 text-xs text-text-muted">{REMAINING} of {TOTAL_SPOTS} beta places remaining</p>
         </div>

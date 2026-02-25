@@ -6,27 +6,27 @@ import { Search, TrendingDown, ClipboardList, Clock } from 'lucide-react'
 const pains = [
   {
     icon: Search,
-    title: 'Multiple Platforms',
+    title: '5 Tabs, Zero Answers',
     description:
-      "Rightmove, Zoopla, council registers, planning portals , none of them talk to each other.",
+      "Rightmove, Zoopla, council registers, planning portals, EPC databases. You're stitching together data that should be in one place.",
   },
   {
     icon: TrendingDown,
-    title: 'Outdated Listings',
+    title: 'Dead Ends Everywhere',
     description:
-      'Hours wasted on properties already gone, non-compliant, or outside Article 4.',
+      'Half the properties you find are already gone, non-compliant, or sitting in an Article 4 zone. Hours wasted before you even pick up the phone.',
   },
   {
     icon: ClipboardList,
-    title: 'Manual Checks',
+    title: 'Compliance by Spreadsheet',
     description:
-      'Cross-referencing licensing, compliance, and planning data by hand. Every. Single. Time.',
+      'Licensing checks, planning history, HMO registers. Your team is doing it all manually, property by property. It doesn\u2019t scale.',
   },
   {
     icon: Clock,
-    title: 'Opportunities Lost',
+    title: 'Someone Else Got There First',
     description:
-      "By the time you've verified a property , someone else has already taken it.",
+      "While you're still verifying compliance, another sourcer has already made the call. Speed wins, and manual processes lose.",
   },
 ]
 
