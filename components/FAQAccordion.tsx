@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'What is HMO Hunter?',
     answer:
-      'HMO Hunter is the UK\'s first dedicated sourcing platform for Houses in Multiple Occupation. It brings together compliance data, licensing status, Article 4 mapping, yield projections, and property search into one place , so housing professionals can find viable HMOs and untapped conversion opportunities faster than ever.',
+      'HMO Hunter is the UK\'s first dedicated sourcing platform for Houses in Multiple Occupation. It brings together compliance data, licensing status, Article 4 mapping, and property search into one place — so housing professionals can find compliant HMOs and act on them faster than ever.',
   },
   {
     question: 'Who is HMO Hunter for?',
@@ -23,7 +23,7 @@ const faqs = [
   {
     question: 'How much does it cost?',
     answer:
-      'Beta users get full Pro access for just £19/month — locked in at that rate forever, even after launch when the price goes up. You\u2019re guaranteed the lowest rate HMO Hunter will ever offer.',
+      'Beta users get full Pro access for just £19/month — and that rate is locked in forever, even after launch when the price increases significantly. This is the lowest price HMO Hunter will ever be offered at, and it\u2019s only available to the first 100 users.',
   },
   {
     question: 'How is this different from Rightmove, Zoopla, or council registers?',

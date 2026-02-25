@@ -7,16 +7,16 @@ const before = [
   'Juggle 5+ platforms to find one property',
   'Manually check licensing and Article 4 status',
   'Waste hours on non-compliant dead ends',
-  'Lose deals while you verify data',
-  'Track everything in spreadsheets',
+  'Placements delayed, deals lost, targets missed',
+  'Track everything in spreadsheets that don\u2019t scale',
 ]
 
 const after = [
   'One search across all compliance data',
   'Licensing, Article 4, and EPC checks built in',
-  'Only see properties that are actually viable',
-  'Verified data means faster decisions',
-  'Export-ready results, no spreadsheets needed',
+  'Only see properties that are compliant and available',
+  'Source faster — whether you\u2019re placing tenants or closing deals',
+  'Export-ready results your team can act on immediately',
 ]
 
 export function BeforeAfter() {

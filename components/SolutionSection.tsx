@@ -16,25 +16,25 @@ const features = [
   },
   {
     icon: BarChart3,
-    title: 'Yield Projections',
-    description: 'Instant yield estimates so you can assess viability before you even visit.',
+    title: 'Viability at a Glance',
+    description: 'Yield estimates, compliance status, and property data — assess any HMO before you pick up the phone.',
   },
   {
     icon: Home,
     title: 'All Housing Types',
-    description: 'Temporary, shared, social, and student housing , all searchable in one place.',
+    description: 'Temporary, shared, social, and student accommodation — all searchable in one place.',
   },
   {
     icon: Bell,
-    title: 'Untapped Opportunities',
+    title: 'Spot What Others Miss',
     description:
-      "Spot properties with HMO conversion potential that aren't on anyone else's radar yet.",
+      "Find properties with HMO conversion potential that aren\u2019t on anyone else\u2019s radar yet.",
   },
   {
     icon: Zap,
-    title: 'Move First',
+    title: 'Act Faster',
     description:
-      'Verified data means faster decisions. See it, assess it, act on it , before your competitors.',
+      'Verified data means faster decisions. Whether you\u2019re placing tenants or securing deals, you move first.',
   },
 ]
 
@@ -49,11 +49,11 @@ export function SolutionSection() {
           className="text-center"
         >
           <h2 className="font-[family-name:var(--font-fraunces)] text-2xl font-bold sm:text-3xl">
-            One platform. One search. Only viable opportunities.
+            One platform. One search. Only compliant results.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-text-muted">
-            HMO Hunter brings together everything you need to source HMOs and spot untapped
-            opportunities , without the spreadsheet chaos.
+            HMO Hunter brings together everything you need to source HMOs — compliance data,
+            licensing, planning, and availability — without the spreadsheet chaos.
           </p>
         </motion.div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

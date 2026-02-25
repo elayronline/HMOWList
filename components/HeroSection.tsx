@@ -10,11 +10,11 @@ export function HeroSection() {
         {/* Headline , always on top */}
         <div className="mx-auto mb-10 max-w-3xl text-center lg:mb-0 lg:hidden">
           <h1 className="font-[family-name:var(--font-fraunces)] text-3xl font-black leading-tight text-text">
-            Find Viable HMOs. Spot Untapped Opportunities. Faster.
+            Find Compliant HMOs. Source Smarter. Move Faster.
           </h1>
           <p className="mt-4 text-base text-text-muted">
-            Cut HMO sourcing from hours to minutes. Search 300+ council registers, licensing
-            status, Article 4 zones, and yield projections — all in one place.
+            Cut HMO sourcing from hours to minutes. Search compliance data, licensing status,
+            Article 4 zones, and 300+ council registers — all in one place.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ export function HeroSection() {
             {/* Desktop headline (hidden on mobile since shown above) */}
             <div className="hidden lg:block">
               <h1 className="font-[family-name:var(--font-fraunces)] text-[2.8rem] font-black leading-tight text-text">
-                Find Viable HMOs. Spot Untapped Opportunities. Faster.
+                Find Compliant HMOs. Source Smarter. Move Faster.
               </h1>
               <p className="mt-5 text-base text-text-muted">
                 Cut HMO sourcing from hours to minutes. Search 300+ council registers, licensing

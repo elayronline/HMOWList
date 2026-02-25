@@ -6,7 +6,7 @@ export function Footer() {
       <div className="mx-auto max-w-6xl text-center">
         <p className="text-lg font-bold text-text">HMO Hunter</p>
         <p className="mt-2 text-sm text-text-muted">
-          Find viable HMOs. Spot untapped opportunities. Faster.
+          Find compliant HMOs. Source smarter. Move faster.
         </p>
         <p className="mt-6 text-xs text-text-muted">
           &copy; {new Date().getFullYear()} HMO Hunter Ltd |{' '}

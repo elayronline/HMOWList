@@ -255,8 +255,8 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
           <div className="mt-4 space-y-1.5">
             {[
               'Find compliant HMOs in minutes, not hours',
-              'Stop losing deals to slower manual checks',
-              'Be sourcing before your competitors even know this exists',
+              'Place tenants faster or close deals sooner',
+              'Be sourcing before anyone else knows this exists',
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" />

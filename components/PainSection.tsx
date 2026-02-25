@@ -24,9 +24,9 @@ const pains = [
   },
   {
     icon: Clock,
-    title: 'Someone Else Got There First',
+    title: 'People Waiting While You Search',
     description:
-      "While you're still verifying compliance, another sourcer has already made the call. Speed wins, and manual processes lose.",
+      "Whether it\u2019s a tenant waiting to be housed, a deal slipping away, or a target being missed \u2014 slow sourcing has real consequences.",
   },
 ]
 
