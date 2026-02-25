@@ -27,9 +27,8 @@ export function HeroSection() {
                 Find Viable HMOs. Spot Untapped Opportunities. Faster.
               </h1>
               <p className="mt-5 text-base text-text-muted">
-                The UK&apos;s first sourcing platform built exclusively for HMO professionals. Search
-                compliance data, licensing status, Article 4 zones, and yield projections , all in one
-                place.
+                Cut HMO sourcing from hours to minutes. Search 300+ council registers, licensing
+                status, Article 4 zones, and yield projections — all in one place.
               </p>
             </div>
             <div className="lg:mt-8">
@@ -42,7 +41,7 @@ export function HeroSection() {
             <SignupForm
               id="signup-form"
               header="Get Early Beta Access"
-              subheader="Join the first wave of housing professionals sourcing smarter."
+              subheader="Be one of 100 professionals to trial the platform before public launch."
               variant="hero"
             />
           </div>

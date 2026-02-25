@@ -247,16 +247,16 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
 
             {errorMessage && <p className="mt-2 text-sm text-red-500">{errorMessage}</p>}
             <p className="mt-2 text-center text-[0.78rem] text-text-muted">
-              {microcopy || 'Takes 10 seconds. Lock in Pro access at £19/mo — forever.'}
+              {microcopy || 'Register now. You\u2019ll only be charged when the beta goes live.'}
             </p>
           </form>
 
           {/* What you get */}
           <div className="mt-4 space-y-1.5">
             {[
-              'Search compliance, licensing, and Article 4 data in one place',
-              'Instant yield projections on every property',
-              'First access to new features before public launch',
+              'Find compliant HMOs in minutes, not hours',
+              'Stop losing deals to slower manual checks',
+              'Be sourcing before your competitors even know this exists',
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" />

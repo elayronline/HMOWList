@@ -39,9 +39,9 @@ export default function Home() {
           <SignupForm
             id="signup-form-2"
             header="Secure Your Beta Spot"
-            subheader="10 seconds. 5 fields. You're in."
+            subheader="100 spots. Pro access at £19/mo — locked in forever. Register now, pay when the beta goes live."
             variant="full"
-            microcopy="Takes 10 seconds. Lock in Pro access at £19/mo — forever."
+            microcopy="Register now. You'll only be charged when the beta goes live."
           />
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function Home() {
             Ready to source smarter?
           </h2>
           <p className="mt-3 text-sm text-text-muted">
-            Join the first wave of housing professionals using HMO Hunter.
+            100 beta spots. £19/mo locked in forever. Register now — pay only when the beta goes live.
           </p>
           <button
             onClick={() => {

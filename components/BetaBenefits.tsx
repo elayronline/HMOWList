@@ -8,18 +8,18 @@ import { TOTAL_SPOTS, REMAINING, FILLED, FILL_PERCENT } from '@/lib/constants'
 const benefits = [
   {
     icon: Rocket,
-    title: 'Pro Access at £19/mo — Forever',
-    description: 'Lock in the lowest price HMO Hunter will ever offer. After launch, the price goes up — but yours won\u2019t.',
+    title: 'Source Before Anyone Else',
+    description: 'While other sourcers wait for launch, you\u2019re already finding deals. Every week on the platform early is a week ahead of your competition.',
   },
   {
     icon: Eye,
-    title: 'First Look at Features',
-    description: 'See and use new features before they go public. Stay ahead of every other sourcer.',
+    title: 'Lowest Rate We\u2019ll Ever Offer',
+    description: 'Beta users pay £19/mo and keep that rate forever. After launch, the price goes up — but yours never will.',
   },
   {
     icon: MessageSquare,
-    title: 'Shape What Comes Next',
-    description: 'Your feedback directly influences the roadmap. Tell us what to build.',
+    title: 'Built Around You',
+    description: 'Beta users have a direct line to the team. What you need, we build. You\u2019re not just using the platform — you\u2019re shaping it.',
   },
 ]
 
@@ -54,7 +54,7 @@ export function BetaBenefits() {
           viewport={{ once: true }}
           className="text-center font-[family-name:var(--font-fraunces)] text-2xl font-bold sm:text-3xl"
         >
-          Early adopters don&apos;t just test , they lead.
+          Why join the beta?
         </motion.h2>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-3">
