@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Map, CheckCircle, BarChart3, Home, Bell, Zap } from 'lucide-react'
+import { Map, CheckCircle, BarChart3, Home, Search, Zap } from 'lucide-react'
 
 const features = [
   {
@@ -12,29 +12,27 @@ const features = [
   {
     icon: CheckCircle,
     title: 'Compliance Built In',
-    description: 'Licensing status, HMO compliance data, and regulatory checks , done automatically.',
+    description: 'Licensing status, HMO compliance data, and regulatory checks — done automatically.',
+  },
+  {
+    icon: Search,
+    title: 'Spot Conversion Opportunities',
+    description: 'Surface properties with HMO potential based on room count, property size, local regulations, and area rules — not just what\u2019s already licensed.',
+  },
+  {
+    icon: Home,
+    title: 'Beyond Listings',
+    description: 'We analyse title data, property sources, and regulatory conditions to find opportunities that aren\u2019t on anyone else\u2019s radar.',
   },
   {
     icon: BarChart3,
     title: 'Viability at a Glance',
-    description: 'Yield estimates, compliance status, and property data — assess any HMO before you pick up the phone.',
-  },
-  {
-    icon: Home,
-    title: 'All Housing Types',
-    description: 'Temporary, shared, social, and student accommodation — all searchable in one place.',
-  },
-  {
-    icon: Bell,
-    title: 'Spot What Others Miss',
-    description:
-      "Find properties with HMO conversion potential that aren\u2019t on anyone else\u2019s radar yet.",
+    description: 'Yield estimates, compliance status, and property data — assess any HMO opportunity before you pick up the phone.',
   },
   {
     icon: Zap,
-    title: 'Act Faster',
-    description:
-      'Verified data means faster decisions. Whether you\u2019re placing tenants or securing deals, you move first.',
+    title: 'Every HMO Interest, One Platform',
+    description: 'Whether you\u2019re placing tenants, assessing compliance, sourcing investments, or managing stock — HMO Hunter is built for how you actually work.',
   },
 ]
 
@@ -52,8 +50,8 @@ export function SolutionSection() {
             One platform. One search. Only compliant results.
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-text-muted">
-            HMO Hunter brings together everything you need to source HMOs — compliance data,
-            licensing, planning, and availability — without the spreadsheet chaos.
+            HMO Hunter brings together compliance data, licensing, property listings, title records,
+            and regulatory intelligence — so you find viable HMO opportunities, not dead ends.
           </p>
         </motion.div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

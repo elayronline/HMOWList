@@ -8,7 +8,7 @@ const faqs = [
   {
     question: 'What is HMO Hunter?',
     answer:
-      'HMO Hunter is the UK\'s first dedicated sourcing platform for Houses in Multiple Occupation. It brings together compliance data, licensing status, Article 4 mapping, and property search into one place — so housing professionals can find compliant HMOs and act on them faster than ever.',
+      'HMO Hunter is the UK\'s first dedicated sourcing platform for Houses in Multiple Occupation. It brings together compliance data, licensing status, Article 4 mapping, property listings, title records, and conversion opportunity analysis into one place — so housing professionals can find compliant HMOs and spot new opportunities faster than ever.',
   },
   {
     question: 'Who is HMO Hunter for?',
@@ -26,14 +26,14 @@ const faqs = [
       'Beta users get full Pro access for just £19/month — and that rate is locked in forever, even after launch when the price increases significantly. This is the lowest price HMO Hunter will ever be offered at, and it\u2019s only available to the first 100 users.',
   },
   {
-    question: 'How is this different from Rightmove, Zoopla, or council registers?',
+    question: 'How is this different from property portals or council registers?',
     answer:
-      "Those platforms weren't built for HMO professionals. HMO Hunter is purpose-built for HMO sourcing , with compliance checks, licensing data, Article 4 mapping, and yield analysis integrated directly into every search. You only see opportunities that are actually viable.",
+      "Property portals are built for general buyers and renters. Council registers are fragmented and manual. HMO Hunter is purpose-built for HMO sourcing — combining compliance data, licensing status, Article 4 mapping, conversion potential analysis, and yield projections into a single workflow. It\u2019s not just about finding properties — it\u2019s about finding viable HMO opportunities.",
   },
   {
     question: 'What data does HMO Hunter use?',
     answer:
-      'We aggregate and verify data from multiple public and proprietary sources including council licensing registers, planning databases, EPC records, and market intelligence to give you the most complete picture of every HMO opportunity.',
+      'We aggregate data from council licensing registers, planning databases, EPC records, title ownership data, property listing sources, and local regulatory frameworks. We then apply our own analysis — including room size calculations, property configuration assessments, and location-based regulation checks — to surface genuine HMO opportunities.',
   },
   {
     question: 'When will I get access after signing up?',

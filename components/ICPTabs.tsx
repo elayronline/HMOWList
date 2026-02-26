@@ -9,25 +9,25 @@ const tabs = [
     key: 'la',
     label: 'Local Authority Sourcers',
     content:
-      'Stop wasting hours on non-compliant properties. HMO Hunter filters by licensing status, Article 4 zones, and compliance data , so you only see properties your authority can actually use. Source faster, meet targets, house people sooner.',
+      'Stop wasting hours on non-compliant properties. HMO Hunter filters by licensing status, Article 4 zones, and compliance data — and surfaces conversion opportunities based on room sizes and local regulations. Source faster, meet targets, house people sooner.',
   },
   {
     key: 'ha',
     label: 'Housing Associations',
     content:
-      'Build a scalable HMO pipeline without the spreadsheet chaos. Search verified housing stock across temporary, shared, and social lets , with compliance and yield data built in. Procurement-ready intelligence in one place.',
+      'Build a scalable HMO pipeline without the spreadsheet chaos. Search verified housing stock across temporary, shared, and social lets — with compliance data, conversion potential analysis, and yield projections built in. Procurement-ready intelligence in one place.',
   },
   {
     key: 'investor',
     label: 'Private Investors & Landlords',
     content:
-      'Find high-yield HMOs and spot conversion opportunities before the market does. Yield projections, Article 4 mapping, and verified compliance data , so every deal you pursue is worth your time and capital.',
+      'Find high-yield HMOs and spot conversion opportunities before the market does. Yield projections, Article 4 mapping, room size analysis, and verified compliance data — so every deal you pursue is worth your time and capital.',
   },
   {
     key: 'council',
     label: 'Council Housing Teams',
     content:
-      'House vulnerable tenants faster with verified HMO data. Source compliant temporary and shared accommodation without juggling multiple platforms. One search. Verified results. Faster placements.',
+      'House vulnerable tenants faster with verified HMO data. Source compliant temporary and shared accommodation — and identify properties with conversion potential based on size and local regulations. One search. Verified results. Faster placements.',
   },
 ]
 

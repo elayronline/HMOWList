@@ -7,15 +7,15 @@ const before = [
   'Juggle 5+ platforms to find one property',
   'Manually check licensing and Article 4 status',
   'Waste hours on non-compliant dead ends',
-  'Placements delayed, deals lost, targets missed',
+  'Miss conversion opportunities hidden in plain sight',
   'Track everything in spreadsheets that don\u2019t scale',
 ]
 
 const after = [
-  'One search across all compliance data',
-  'Licensing, Article 4, and EPC checks built in',
-  'Only see properties that are compliant and available',
-  'Source faster — whether you\u2019re placing tenants or closing deals',
+  'One search across compliance data, listings, and title records',
+  'Licensing, Article 4, EPC, and regulation checks built in',
+  'Surface HMO conversion potential based on room sizes, property layout, and local rules',
+  'Source faster — whether placing tenants, assessing stock, or closing deals',
   'Export-ready results your team can act on immediately',
 ]
 

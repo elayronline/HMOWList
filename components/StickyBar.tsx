@@ -38,8 +38,8 @@ export function StickyBar() {
         >
           <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-2.5 sm:px-6">
             <p className="text-sm font-medium text-white">
-              <span className="hidden sm:inline">Only 100 beta spots available. Source compliant HMOs before anyone else.</span>
-              <span className="sm:hidden">Limited beta — 100 spots only</span>
+              <span className="hidden sm:inline">Purpose-built for HMO sourcing. Join the beta and shape the platform.</span>
+              <span className="sm:hidden">Join the beta — shape the platform</span>
             </p>
             <button
               onClick={scrollToForm}

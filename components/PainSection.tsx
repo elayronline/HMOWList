@@ -8,7 +8,7 @@ const pains = [
     icon: Search,
     title: '5 Tabs, Zero Answers',
     description:
-      "Rightmove, Zoopla, council registers, planning portals, EPC databases. You're stitching together data that should be in one place.",
+      "Property portals, council registers, planning portals, EPC databases — all open in different tabs, none talking to each other. You're stitching together data that should be in one place.",
   },
   {
     icon: TrendingDown,

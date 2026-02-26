@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { getStoredUTMParams } from '@/lib/utm'
-import { REMAINING, TOTAL_SPOTS } from '@/lib/constants'
+
 import { SuccessState } from './SuccessState'
 import { Shield, CheckCircle } from 'lucide-react'
 
@@ -255,8 +255,8 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
           <div className="mt-4 space-y-1.5">
             {[
               'Find compliant HMOs in minutes, not hours',
-              'Place tenants faster or close deals sooner',
-              'Be sourcing before anyone else knows this exists',
+              'Built for placements, compliance, stock management, and investment',
+              'Shape the platform around how your team actually works',
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <CheckCircle className="mt-0.5 h-3.5 w-3.5 shrink-0 text-accent" />
@@ -274,7 +274,7 @@ export function SignupForm({ id, header, subheader, variant = 'full', microcopy 
           </div>
           {isHero && (
             <p className="mt-2 text-center text-xs font-semibold text-accent">
-              {REMAINING} of {TOTAL_SPOTS} beta places remaining
+              No payment until the beta goes live.
             </p>
           )}
         </>

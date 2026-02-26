@@ -13,8 +13,8 @@ export function HeroSection() {
             Find Compliant HMOs. Source Smarter. Move Faster.
           </h1>
           <p className="mt-4 text-base text-text-muted">
-            Cut HMO sourcing from hours to minutes. Search compliance data, licensing status,
-            Article 4 zones, and 300+ council registers — all in one place.
+            Search HMO registers, licensing data, Article 4 zones, and property listings — then
+            surface conversion opportunities based on regulations, room sizes, and location. All in one platform.
           </p>
         </div>
 
@@ -27,8 +27,8 @@ export function HeroSection() {
                 Find Compliant HMOs. Source Smarter. Move Faster.
               </h1>
               <p className="mt-5 text-base text-text-muted">
-                Cut HMO sourcing from hours to minutes. Search 300+ council registers, licensing
-                status, Article 4 zones, and yield projections — all in one place.
+                Search HMO registers, licensing data, Article 4 zones, and property listings — then
+                surface conversion opportunities based on regulations, room sizes, and location. All in one platform.
               </p>
             </div>
             <div className="lg:mt-8">

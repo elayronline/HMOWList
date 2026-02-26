@@ -1,48 +1,26 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { motion, useInView, animate } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { Rocket, Eye, MessageSquare } from 'lucide-react'
-import { TOTAL_SPOTS, REMAINING, FILLED, FILL_PERCENT } from '@/lib/constants'
+import { TOTAL_SPOTS } from '@/lib/constants'
 
 const benefits = [
   {
     icon: Rocket,
     title: 'Source Before Anyone Else',
-    description: 'While other sourcers wait for launch, you\u2019re already finding deals. Every week on the platform early is a week ahead of your competition.',
+    description: 'While other sourcers wait for launch, you\u2019re already finding opportunities. Every week on the platform early is a week ahead of your competition.',
   },
   {
     icon: Eye,
     title: 'Lowest Rate We\u2019ll Ever Offer',
-    description: 'Beta users pay £19/mo and keep that rate forever. After launch, the price goes up — but yours never will.',
+    description: 'Beta users pay \u00a319/mo and keep that rate forever. After launch, the price goes up \u2014 but yours never will.',
   },
   {
     icon: MessageSquare,
     title: 'Built Around You',
-    description: 'Beta users have a direct line to the team. What you need, we build. You\u2019re not just using the platform — you\u2019re shaping it.',
+    description: 'Beta users have a direct line to the team. What you need, we build. You\u2019re not just using the platform \u2014 you\u2019re shaping it.',
   },
 ]
-
-function AnimatedCounter({ target }: { target: number }) {
-  const ref = useRef<HTMLSpanElement>(null)
-  const isInView = useInView(ref, { once: true })
-  const [displayValue, setDisplayValue] = useState(0)
-
-  useEffect(() => {
-    if (!isInView) return
-
-    const controls = animate(0, target, {
-      duration: 1.5,
-      onUpdate(value) {
-        setDisplayValue(Math.round(value))
-      },
-    })
-
-    return () => controls.stop()
-  }, [isInView, target])
-
-  return <span ref={ref}>{displayValue}</span>
-}
 
 export function BetaBenefits() {
   return (
@@ -76,30 +54,19 @@ export function BetaBenefits() {
           ))}
         </div>
 
-        {/* Urgency counter with progress bar */}
+        {/* Beta spots callout */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mx-auto mt-14 max-w-md text-center"
+          className="mx-auto mt-14 max-w-lg text-center"
         >
-          <p className="text-6xl font-bold text-accent sm:text-7xl">
-            <AnimatedCounter target={REMAINING} />
+          <p className="font-[family-name:var(--font-fraunces)] text-xl font-bold sm:text-2xl">
+            First {TOTAL_SPOTS} users shape the platform
           </p>
-          <p className="mt-2 text-sm font-semibold uppercase tracking-widest text-text-muted">
-            of {TOTAL_SPOTS} beta places remaining
+          <p className="mt-3 text-sm text-text-muted">
+            Your feedback directly influences what we build. Early users get Pro access at £19/mo — locked in permanently.
           </p>
-          {/* Progress bar */}
-          <div className="mx-auto mt-4 h-3 max-w-xs overflow-hidden rounded-full bg-surface-3">
-            <motion.div
-              initial={{ width: 0 }}
-              whileInView={{ width: `${FILL_PERCENT}%` }}
-              viewport={{ once: true }}
-              transition={{ duration: 1.5, ease: 'easeOut' }}
-              className="h-full rounded-full bg-accent"
-            />
-          </div>
-          <p className="mt-2 text-xs text-text-muted">{FILLED} spots claimed</p>
         </motion.div>
       </div>
     </section>

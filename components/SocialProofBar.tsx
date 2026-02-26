@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FILLED } from '@/lib/constants'
 
 export function SocialProofBar() {
   return (
@@ -14,7 +13,7 @@ export function SocialProofBar() {
     >
       <div className="mx-auto max-w-6xl text-center">
         <p className="text-[0.82rem] font-semibold text-text-muted">
-          Trusted by <span className="font-bold text-accent">{FILLED}</span> housing professionals across local authorities, housing associations, private investors, and council teams.
+          The UK's first sourcing platform built exclusively for HMO professionals.
         </p>
       </div>
     </motion.section>

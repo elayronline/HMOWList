@@ -14,7 +14,7 @@ const steps = [
     icon: Mail,
     step: '2',
     title: 'Get your access link',
-    description: 'When the beta goes live, you\u2019ll receive your payment and access link via email. Lock in £19/mo Pro access before the price goes up.',
+    description: 'When the beta goes live, you\u2019ll receive your payment and access link via email. Lock in £19/mo — the lowest price HMO Hunter will ever be. This rate is only available to the first 100 beta users.',
   },
   {
     icon: Rocket,

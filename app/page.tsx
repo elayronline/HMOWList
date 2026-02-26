@@ -14,7 +14,6 @@ import { HowItWorks } from '@/components/HowItWorks'
 import { ICPTabs } from '@/components/ICPTabs'
 import { FAQAccordion } from '@/components/FAQAccordion'
 import { Footer } from '@/components/Footer'
-import { REMAINING, TOTAL_SPOTS } from '@/lib/constants'
 
 export default function Home() {
   return (
@@ -44,7 +43,7 @@ export default function Home() {
           <SignupForm
             id="signup-form-2"
             header="Secure Your Beta Spot"
-            subheader="100 spots. Pro access at £19/mo — locked in forever. Register now, pay when the beta goes live."
+            subheader="Join 100 professionals shaping the platform. Pro access at £19/mo — locked in permanently. Pay only when the beta goes live."
             variant="full"
             microcopy="Register now. You'll only be charged when the beta goes live."
           />
@@ -60,7 +59,7 @@ export default function Home() {
             Ready to source smarter?
           </h2>
           <p className="mt-3 text-sm text-text-muted">
-            100 beta spots. £19/mo locked in forever. Register now — pay only when the beta goes live.
+            100 beta places for professionals who want to shape the UK's first HMO sourcing platform. £19/mo Pro access — locked in permanently.
           </p>
           <button
             onClick={() => {
@@ -71,7 +70,7 @@ export default function Home() {
           >
             Join the Beta
           </button>
-          <p className="mt-3 text-xs text-text-muted">{REMAINING} of {TOTAL_SPOTS} beta places remaining</p>
+          <p className="mt-3 text-xs text-text-muted">No payment until the beta goes live.</p>
         </div>
       </section>
 
